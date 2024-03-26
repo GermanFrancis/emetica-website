@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* variables de colores*/
+:root {
+    --color-primario: #141414;
+    --color-secundario: #323232;
+    --color-terciario: #fff;
+    --color-cuaternario:#39e079;
+}
+
+/* Restablecer estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Estilos generales */
+body {
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    background-color: var(--color-primario);
+}
+
+/* Header */
+header {
+    background-color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-terciario);
+    padding: 30px 15px;
+}
+
+.logo-banda {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav a:hover {
+    color: var(--color-cuaternario);
+}
+
+/* Main */
+.separator {
+    width: 100%;
+    height: 1px; /* Adjust thickness as needed */
+    background-color: var(--color-secundario); /* Adjust color as needed */
+}
+
+.hero {
+    position: relative;
+}
+
+.image-overlay {
+    position: relative;
+}
+
+.image-overlay img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    text-align: center;
+    color: white;
+}
+
+.hero-text h2 {
+    font-family: "Lexend", sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.hero-text a{
+    font-weight: 800;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.botones{
+    display: flex;
+    gap: 10px;
+}
+
+.boton-play{
+    background-color: var(--color-cuaternario);
+    color: var(--color-primario);
+}
+
+.boton-follow{
+    background-color: var(--color-secundario);
+    color: #fff;
+}
+
+.hero-text a:hover {
+    color: #ccc;
+}
+
+/* Secciones */
+section {
+    padding: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul li a:hover {
+    color: #ccc;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--color-primario);
+    color: #fff;
+    padding: 10px;
+}

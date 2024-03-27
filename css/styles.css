@@ -68,6 +68,10 @@ header nav a:hover {
 }
 
 /* Main */
+main{
+    margin-bottom: 30px;
+}
+
 .separator {
     width: 100%;
     height: 1px;
@@ -166,21 +170,21 @@ header nav a:hover {
 .image-container {
     position: relative;
     width: 350px;
-  }
-  
-  .image-container img {
+}
+
+.image-container img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
-  }
+}
 
-  .image-container img:hover {
+.image-container img:hover {
     scale: 1.1;
     margin-bottom: 15px;
     transition: 0.5s;
-  }
-  
-  .image-container button {
+}
+
+.image-container button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,23 +195,38 @@ header nav a:hover {
     border-radius: 30px;
     top: 5%;
     left: 5%;
-  }
+}
 
-  .image-container button:hover {
+.image-container button:hover {
     scale: 1.1;
     transition: 0.5s;
-  }
+}
 
-  .image-container button i {
-   margin: 10px 13px;
-   font-size: 20px;
-   color: var(--color-primario);
-  }
+.image-container button i {
+    margin: 10px 13px;
+    font-size: 20px;
+    color: var(--color-primario);
+}
 
 
 /* Pie de página */
 footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
     background-color: var(--color-primario);
+    text-align: center;
     color: #fff;
-    padding: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+.social-icons {
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: var(--color-terciario);
+    /* Cambia el color de los iconos aquí */
+    text-decoration: none;
 }

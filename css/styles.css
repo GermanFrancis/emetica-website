@@ -6,7 +6,7 @@
     --color-primario: #141414;
     --color-secundario: #323232;
     --color-terciario: #fff;
-    --color-cuaternario:#39e079;
+    --color-cuaternario: #39e079;
 }
 
 /* Restablecer estilos */
@@ -70,8 +70,8 @@ header nav a:hover {
 /* Main */
 .separator {
     width: 100%;
-    height: 1px; /* Adjust thickness as needed */
-    background-color: var(--color-secundario); /* Adjust color as needed */
+    height: 1px;
+    background-color: var(--color-secundario);
 }
 
 .hero {
@@ -99,14 +99,16 @@ header nav a:hover {
 
 .hero img {
     width: 100%;
-    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
 }
@@ -117,24 +119,24 @@ header nav a:hover {
     margin-bottom: 30px;
 }
 
-.hero-text a{
+.hero-text a {
     font-weight: 800;
     text-decoration: none;
     padding: 15px 20px;
     border-radius: 5px;
 }
 
-.botones{
+.botones {
     display: flex;
     gap: 10px;
 }
 
-.boton-play{
+.boton-play {
     background-color: var(--color-cuaternario);
     color: var(--color-primario);
 }
 
-.boton-follow{
+.boton-follow {
     background-color: var(--color-secundario);
     color: #fff;
 }
@@ -143,35 +145,65 @@ header nav a:hover {
     color: #ccc;
 }
 
+.seccion-lanzamientos {
+    padding: 20px;
+    color: var(--color-terciario);
+}
+
+.seccion-lanzamientos h2 {
+    font-family: "Lexend", sans-serif;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
 /* Secciones */
-section {
-    padding: 10px;
+#lanzamientos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-section h2 {
-    margin-top: 0;
-    font-size: 18px;
-}
+.image-container {
+    position: relative;
+    width: 350px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
 
-/* Listas */
-ul {
-    list-style: none;
-    padding: 0;
-}
+  .image-container img:hover {
+    scale: 1.1;
+    margin-bottom: 15px;
+    transition: 0.5s;
+  }
+  
+  .image-container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    background-color: var(--color-cuaternario);
+    position: absolute;
+    border-radius: 30px;
+    top: 5%;
+    left: 5%;
+  }
 
-ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
+  .image-container button:hover {
+    scale: 1.1;
+    transition: 0.5s;
+  }
 
-ul li a {
-    text-decoration: none;
-    color: #333;
-}
+  .image-container button i {
+   margin: 10px 13px;
+   font-size: 20px;
+   color: var(--color-primario);
+  }
 
-ul li a:hover {
-    color: #ccc;
-}
 
 /* Pie de página */
 footer {

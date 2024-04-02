@@ -2,13 +2,24 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Ayuda con la busqueda de la página en google -->
+    <meta
+      name="description"
+      content="Página web de la banda Emetica, conoce sus lanzamientos y próximos conciertos"/>
+    <meta name="keywords" content="Emetica, rock, nintendocore" />
+    <meta name="author" content="Emetica" />
+    <!-- Los robots nos ayudan a ubicar el index de la pagina en internet -->
+    <meta name="robots" content="index, follow" />
+    <!-- Tamaño de la pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Emetica</title>
+    <title>Emetica Website</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <div class="logo-banda">
+      <div class="container-logo">
         <div class="logo">
           <i class="fa-solid fa-record-vinyl"></i>
         </div>
@@ -17,7 +28,7 @@
         </div>
       </div>
       <nav>
-        <a href="/">Inicio</a>
+        <a href="index.html">Inicio</a>
         <a href="#">Acerca de</a>
         <a href="#">Conciertos</a>
         <a href="#">Contáctanos</a>
@@ -25,24 +36,24 @@
     </header>
     <div class="separator"></div>
     <main>
-      <section class="hero">
+      <section class="band-section">
         <div class="image-overlay">
           <img src="./img/emetica.jpg" alt="Integrantes de Emetica" />
           <div class="gradient"></div>
         </div>
 
-        <div class="hero-text">
+        <div class="container-actions">
           <h2>Emetica</h2>
-          <div class="botones">
-            <a class="boton-play" href="#lanzamientos">Escúchanos</a>
-            <a class="boton-follow" href="#">Siguenos</a>
+          <div class="buttons">
+            <a class="play-button" href="#releases">Escúchanos</a>
+            <a class="follow-button" href="#">Siguenos</a>
           </div>
         </div>
       </section>
 
-      <section class="seccion-lanzamientos">
+      <section class="releases-section">
         <h2>Nuevos Lanzamientos</h2>
-        <div id="lanzamientos">
+        <div id="releases">
           <article>
             <div class="image-container">
               <img src="./img/portada1.jpeg" alt="Portada cuerda huida" />

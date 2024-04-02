@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* rem units */
+html {
+    font-size: 62.5%;
+}
+
 /* variables de colores*/
 :root {
     --color-primario: #141414;
@@ -21,7 +26,7 @@
 /* Estilos generales */
 body {
     font-family: "Work Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1.6rem;
     background-color: var(--color-primario);
 }
 
@@ -32,34 +37,34 @@ header {
     justify-content: space-between;
     align-items: center;
     color: var(--color-terciario);
-    padding: 30px 15px;
+    padding: 3rem 1.5rem;
 }
 
 .container-logo {
     font-family: "Lexend", sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .logo i {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 header nav {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 header nav a {
-    margin-right: 10px;
+    margin-right: 1rem;
     text-decoration: none;
     color: #fff;
 }
@@ -70,7 +75,7 @@ header nav a:hover {
 
 /* Main */
 main{
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 }
 
 .separator {
@@ -104,7 +109,7 @@ main{
 
 .band-section img {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -120,21 +125,21 @@ main{
 
 .container-actions h2 {
     font-family: "Lexend", sans-serif;
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 5rem;
+    margin-bottom: 3rem;
     font-weight: 600;
 }
 
 .container-actions a {
     font-weight: 800;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 1.5rem 2rem;
     border-radius: 5px;
 }
 
 .buttons {
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .play-button {
@@ -152,37 +157,37 @@ main{
 }
 
 .releases-section {
-    padding: 20px;
+    padding: 2rem;
     color: var(--color-terciario);
 }
 
 .releases-section h2 {
     font-family: "Lexend", sans-serif;
-    font-size: 20px;
-    margin-bottom: 25px;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 /* Secciones */
 #releases {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+    gap: 2rem;
 }
 
 .image-container {
     position: relative;
-    width: 350px;
+    width: 35rem;
 }
 
 .image-container img {
     width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .image-container img:hover {
     scale: 1.1;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
     transition: 0.5s;
 }
 
@@ -194,7 +199,7 @@ main{
     border: none;
     background-color: var(--color-cuaternario);
     position: absolute;
-    border-radius: 30px;
+    border-radius: 3rem;
     top: 5%;
     left: 5%;
 }
@@ -205,29 +210,29 @@ main{
 }
 
 .image-container button i {
-    margin: 10px 13px;
-    font-size: 20px;
+    margin: 1rem 1.3rem;
+    font-size: 2rem;
     color: var(--color-primario);
 }
 
 
 /* Pie de página */
 footer {
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
     background-color: var(--color-primario);
     text-align: center;
     color: #fff;
     width: 100%;
-    height: 150px;
+    height: 15rem;
 }
 
 .social-icons {
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
 
 .social-icons a {
-    margin: 0 10px;
+    margin: 0 1rem;
     color: var(--color-terciario);
     /* Cambia el color de los iconos aquí */
     text-decoration: none;

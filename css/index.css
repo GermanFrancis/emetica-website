@@ -53,9 +53,15 @@ header {
     font-size: 2rem;
 }
 
-header h1 {
+.name a {
     margin: 0;
+    text-decoration: none;
+    color: var(--color-terciario);
     font-size: 2.4rem;
+}
+
+.name a:hover {
+    color: var(--color-cuaternario);
 }
 
 header nav {
@@ -152,8 +158,14 @@ main{
     color: #fff;
 }
 
-.container-actions a:hover {
-    color: #ccc;
+.play-button:hover {
+    color: var(--color-terciario);
+    background-color: var(--color-secundario);
+}
+
+.follow-button:hover {
+    color: var(--color-primario);
+    background-color: var(--color-cuaternario);
 }
 
 .releases-section {
@@ -185,12 +197,6 @@ main{
     margin-bottom: 1rem;
 }
 
-.image-container img:hover {
-    scale: 1.1;
-    margin-bottom: 1.5rem;
-    transition: 0.5s;
-}
-
 .image-container button {
     display: flex;
     justify-content: center;
@@ -205,8 +211,7 @@ main{
 }
 
 .image-container button:hover {
-    scale: 1.1;
-    transition: 0.5s;
+    cursor: pointer;
 }
 
 .image-container button i {
@@ -215,6 +220,16 @@ main{
     color: var(--color-primario);
 }
 
+.info{
+    padding: 4rem 0;
+}
+
+.info h2 {
+    font-family: "Lexend", sans-serif;
+    color: var(--color-terciario);
+    font-size: 1.8rem;
+    text-align: center;
+}
 
 /* Pie de página */
 footer {

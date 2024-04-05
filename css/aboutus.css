@@ -152,6 +152,5 @@ footer {
 .social-icons a {
     margin: 0 1rem;
     color: var(--color-terciario);
-    /* Cambia el color de los iconos aquí */
     text-decoration: none;
 }

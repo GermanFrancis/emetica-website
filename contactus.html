@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Emetica Website</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/aboutus.css" />
+    <link rel="stylesheet" href="./css/contactus.css" />
   </head>
   <body>
     <header>
@@ -38,42 +38,24 @@
     </header>
     <div class="separator"></div>
     <main>
-      <section id="about-us">
-        <h2>Sobre nosotros</h2>
-        <div class="about-us-content">
-          <article>
-            <img src="./img/banda-foto.jpg" alt="Imagen de la banda Emetica" />
-            <p>
-              Emetica es una banda peruana que se formó en el año 2000.
-              Nuestra música es una mezcla de diferentes géneros, con
-              influencias que van desde el rock hasta la electrónica. Nos apasiona
-              crear música que inspire y emocione a nuestros oyentes.
-            </p>
-          </article>
-          <article>
-            <img
-              src="./img/nintendocore.jpg"
-              alt="Imagen del estilo Nintendocore"
-            />
-            <p>
-              Nuestro estilo es Nintendocore, un género que combina elementos
-              del chiptune y videojuegos con el hardcore punk y metal. Nos
-              encanta la energía y la creatividad que este estilo nos permite
-              expresar.
-            </p>
-          </article>
-          <article>
-            <img
-              src="./img/horse-the-band.jpg"
-              alt="Imagen de los artistas que nos inspiran"
-            />
-            <p>
-              Nos inspiramos en una variedad de artistas, desde bandas de rock
-              clásico hasta músicos de videojuegos. Pero la más resaltante es la banda Horse The Band que nos inspiró a crear música con un estilo único y original.
-            </p>
-          </article>
-        </div>
-      </section>
+        <section class="contact-us">
+          <h2>Contáctanos</h2>
+          <form action="">
+            <label for="nombre">
+                <span>Nombre</span>
+                <input type="text" id="nombre" required placeholder="Nombre">
+            </label>
+            <label for="correo">
+                <span>Correo</span>
+                <input type="email" id="correo" required placeholder="Correo">
+            </label>
+            <label for="mensaje">
+                <span>Mensaje</span>
+                <textarea id="mensaje" required placeholder="Tu mensaje aquí"></textarea>
+            </label>
+            <input class="form-button" type="submit" value="Enviar">
+          </form>
+        </section>
     </main>
     <div class="separator"></div>
     <footer>

@@ -49,8 +49,9 @@ header {
     gap: 1rem;
 }
 
-.logo i {
-    font-size: 2rem;
+.logo img {
+    width: 10rem;
+    height: auto;
 }
 
 .name a {
@@ -146,6 +147,7 @@ main{
 .buttons {
     display: flex;
     gap: 1rem;
+    height: 5rem;
 }
 
 .play-button {
@@ -158,22 +160,14 @@ main{
     color: #fff;
 }
 
-.play-button:hover {
-    color: var(--color-terciario);
-    background-color: var(--color-secundario);
-}
-
-.follow-button:hover {
-    color: var(--color-primario);
-    background-color: var(--color-cuaternario);
-}
-
-.releases-section {
+/* Secciones */
+.releases-section,.old-section {
     padding: 2rem;
     color: var(--color-terciario);
 }
 
-.releases-section h2 {
+.releases-section h2,.old-section h2 {
+    font-weight: 600;
     font-family: "Lexend", sans-serif;
     font-size: 2rem;
     margin-bottom: 2.5rem;
@@ -231,11 +225,11 @@ main{
     text-align: center;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
     padding-top: 2rem;
     padding-bottom: 1rem;
-    background-color: var(--color-primario);
+    background-color: var(--color-secundario);
     text-align: center;
     color: #fff;
     width: 100%;

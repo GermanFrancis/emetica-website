@@ -55,8 +55,9 @@ header {
     gap: 1rem;
 }
 
-.logo i {
-    font-size: 2rem;
+.logo img {
+    width: 10rem;
+    height: auto;
 }
 
 .name a {
@@ -90,7 +91,6 @@ header nav a:hover {
     padding: 20px;
     margin: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #about-us h2 {
@@ -106,7 +106,6 @@ header nav a:hover {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .about-us-content article{

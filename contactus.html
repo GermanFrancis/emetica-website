@@ -23,16 +23,15 @@
     <header>
       <div class="container-logo">
         <div class="logo">
-          <i class="fa-solid fa-record-vinyl"></i>
-        </div>
-        <div class="name">
-          <a href="index.html">Emetica</a>
+          <a href="index.html">
+            <img src="./img/logo.png" alt="emetica logo">
+          </a>
         </div>
       </div>
       <nav>
         <a href="index.html">Inicio</a>
         <a href="aboutus.html">Nosotros</a>
-        <a href="#">Conciertos</a>
+        <a href="concerts.html">Conciertos</a>
         <a href="contactus.html">Contáctanos</a>
       </nav>
     </header>
@@ -43,12 +42,33 @@
           <form action="">
             <label for="nombre">
                 <span>Nombre</span>
-                <input type="text" id="nombre" required placeholder="Nombre">
+                <input type="text" id="nombre" required placeholder="Nombre" autocomplete="name">
             </label>
             <label for="correo">
                 <span>Correo</span>
-                <input type="email" id="correo" required placeholder="Correo">
+                <input type="email" id="correo" required placeholder="Correo" autocomplete="email">
             </label>
+            <label for="pais">
+                <span>País</span>
+                <input list="pais" required autocomplete="country">
+                <datalist id="pais">
+                    <option value="México"></option>
+                    <option value="Estados Unidos"></option>
+                    <option value="Canadá"></option>
+                    <option value="España"></option>
+                    <option value="Argentina"></option>
+                    <option value="Chile"></option>
+                    <option value="Colombia"></option>
+                    <option value="Perú"></option>
+                    <option value="Brasil"></option>
+                    <option value="Ecuador"></option>
+                    <option value="Venezuela"></option>
+                    <option value="Bolivia"></option>
+                    <option value="Paraguay"></option>
+                    <option value="Uruguay"></option>
+                    <option value="Panamá"></option>
+                    <option value="Costa Rica"></option>
+                </datalist>
             <label for="mensaje">
                 <span>Mensaje</span>
                 <textarea id="mensaje" required placeholder="Tu mensaje aquí"></textarea>

@@ -40,15 +40,6 @@ header {
     padding: 3rem 1.5rem;
 }
 
-.container-logo {
-    font-family: "Lexend", sans-serif;
-    font-size: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
-
 .logo img {
     width: 10rem;
     height: auto;
@@ -174,6 +165,13 @@ main{
 }
 
 /* Secciones */
+
+#old {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
 #releases {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -218,7 +216,7 @@ main{
     padding: 4rem 0;
 }
 
-.info h2 {
+.info h3 {
     font-family: "Lexend", sans-serif;
     color: var(--color-terciario);
     font-size: 1.8rem;

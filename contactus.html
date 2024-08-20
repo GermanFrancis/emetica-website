@@ -21,16 +21,11 @@
   </head>
   <body>
     <header>
-      <div class="container-logo">
-        <div class="logo">
-          <a href="index.html">
-            <img src="./img/logo.png" alt="emetica logo">
-          </a>
-        </div>
-      </div>
-      <nav>
+        <a class="logo" href="index.html">
+          <img src="./img/logo.png" alt="emetica logo">
+        </a>
+      <nav role="navigation">
         <a href="index.html">Inicio</a>
-        <a href="aboutus.html">Nosotros</a>
         <a href="concerts.html">Conciertos</a>
         <a href="contactus.html">Contáctanos</a>
       </nav>
@@ -42,15 +37,15 @@
           <form action="">
             <label for="nombre">
                 <span>Nombre</span>
-                <input type="text" id="nombre" required placeholder="Nombre" autocomplete="name">
+                <input type="text" id="nombre" name="nombre" required placeholder="Nombre" autocomplete="name">
             </label>
             <label for="correo">
                 <span>Correo</span>
-                <input type="email" id="correo" required placeholder="Correo" autocomplete="email">
+                <input type="email" id="correo" name="correo" required placeholder="Correo" autocomplete="email">
             </label>
             <label for="pais">
                 <span>País</span>
-                <input list="pais" required autocomplete="country">
+                <input list="pais" name="pais" placeholder="País" required autocomplete="country">
                 <datalist id="pais">
                     <option value="México"></option>
                     <option value="Estados Unidos"></option>
@@ -69,34 +64,29 @@
                     <option value="Panamá"></option>
                     <option value="Costa Rica"></option>
                 </datalist>
+            </label>
             <label for="mensaje">
                 <span>Mensaje</span>
-                <textarea id="mensaje" required placeholder="Tu mensaje aquí"></textarea>
+                <textarea id="mensaje" name="mensaje" required placeholder="Tu mensaje aquí"></textarea>
             </label>
-            <input class="form-button" type="submit" value="Enviar">
+            <input class="form-button" type="submit" value="Enviar" aria-label="enviar formulario">
           </form>
         </section>
     </main>
     <div class="separator"></div>
     <footer>
       <div class="social-icons">
-        <a href="https://www.facebook.com/emetica" target="_blank">
-          <i class="social-icons fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.twitter.com/emetica" target="_blank">
-          <i class="social-icons fa-brands fa-square-x-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/emetica" target="_blank">
+        <a href="https://www.instagram.com/emeticaaa" target="_blank" aria-label="Emetica en instagram" rel="noopener noreferrer">
           <i class="social-icons fa-brands fa-instagram"></i>
         </a>
-        <a href="https://www.soundcloud.com/emetica" target="_blank">
+        <a href="https://www.soundcloud.com/emetica" target="_blank" aria-label="Emetica en soundcloud" rel="noopener noreferrer">
           <i class="social-icons fa-brands fa-soundcloud"></i>
         </a>
-        <a href="https://www.spotify.com/emetica" target="_blank">
+        <a href="https://www.spotify.com/emetica" target="_blank" aria-label="Emetica en spotify" rel="noopener noreferrer">
           <i class="social-icons fa-brands fa-spotify"></i>
         </a>
       </div>
-      <p>Copyright &copy; 2024 Emetica</p>
+      <p>Copyright &copy; Emetica 2024</p>
     </footer>
     <script src="./js/main.js"></script>
     <script

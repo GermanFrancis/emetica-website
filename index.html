@@ -1,36 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- Ayuda con la busqueda de la página en google -->
     <meta
       name="description"
-      content="Página web de la banda Emetica, conoce sus lanzamientos y próximos conciertos"/>
+      content="Página web de la banda Emetica, conoce sus lanzamientos y próximos conciertos"
+    />
     <meta name="keywords" content="Emetica, rock, nintendocore" />
-    <meta name="author" content="Emetica" />
+    <meta name="author" content="refranz6" />
     <!-- Los robots nos ayudan a ubicar el index de la pagina en internet -->
     <meta name="robots" content="index, follow" />
     <!-- Tamaño de la pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emetica Website</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
 
   <body>
     <header>
-      <div class="container-logo">
-        <div class="logo">
-          <a href="index.html">
-            <img src="./img/logo.png" alt="emetica logo">
-          </a>
-        </div>
-      </div>
+      <a class="logo" href="index.html">
+        <img src="./img/logo.png" alt="emetica logo" />
+      </a>
       <nav>
         <a href="index.html">Inicio</a>
-        <a href="aboutus.html">Nosotros</a>
         <a href="concerts.html">Conciertos</a>
         <a href="contactus.html">Contáctanos</a>
       </nav>
@@ -47,7 +42,11 @@
           <h2>Emetica</h2>
           <div class="buttons">
             <a class="play-button" href="#releases">Escúchanos</a>
-            <a class="follow-button" href="https://www.instagram.com/emeticaaa" target="_blank">Síguenos
+            <a
+              class="follow-button"
+              href="https://www.instagram.com/emeticaaa"
+              target="_blank"
+              >Síguenos
               <i class="social-icons fa-brands fa-instagram"></i>
             </a>
           </div>
@@ -56,13 +55,16 @@
 
       <section class="old-section">
         <h2>Canciones Bandera</h2>
-        <div id="releases">
+        <div id="old">
           <article>
             <div class="image-container">
               <figure>
-                <img src="./img/portada2.jpeg" alt="Portada Driving Through The Meteor Gorge" />
+                <img
+                  src="./img/portada2.jpeg"
+                  alt="Portada Driving Through The Meteor Gorge"
+                />
               </figure>
- 
+
               <h3>Driving Through The Meteor Gorge</h3>
               <button id="play-pause-button2">
                 <i id="play-pause-icon2" class="fa-solid fa-play"></i>
@@ -72,9 +74,12 @@
           <article>
             <div class="image-container">
               <figure>
-                <img src="./img/portada5.jpeg" alt="Portada Metafora Arkanoide" />
+                <img
+                  src="./img/portada5.jpeg"
+                  alt="Portada Metafora Arkanoide"
+                />
               </figure>
- 
+
               <h3>Metafora Arkanoide</h3>
               <button id="play-pause-button2">
                 <i id="play-pause-icon2" class="fa-solid fa-play"></i>
@@ -84,7 +89,10 @@
           <article>
             <div class="image-container">
               <figure>
-                <img src="./img/portada3.jpeg" alt="Portada Follow Us To The Deepest Forest" />
+                <img
+                  src="./img/portada3.jpeg"
+                  alt="Portada Follow Us To The Deepest Forest"
+                />
               </figure>
               <h3>Follow Us To The Deepest Forest</h3>
               <button id="play-pause-button3">
@@ -112,7 +120,10 @@
           <article>
             <div class="image-container">
               <figure>
-                <img src="./img/portada4.jpeg" alt="Portada MortalKombatWoundedVeteran" />
+                <img
+                  src="./img/portada4.jpeg"
+                  alt="Portada MortalKombatWoundedVeteran"
+                />
               </figure>
               <h3>MortalKombatWoundedVeteran</h3>
               <button id="play-pause-button4">
@@ -123,29 +134,23 @@
         </div>
       </section>
       <section class="info">
-        <h2>Nueva música próximamente...</h2>
+        <h3>Nueva música próximamente...</h3>
       </section>
     </main>
 
     <footer>
       <div class="social-icons">
-        <a href="https://www.facebook.com/emetica" target="_blank">
-          <i class="social-icons fa-brands fa-facebook"></i>
-        </a>
-        <a href="https://www.twitter.com/emetica" target="_blank">
-          <i class="social-icons fa-brands fa-square-x-twitter"></i>
-        </a>
-        <a href="https://www.instagram.com/emeticaaa" target="_blank">
+        <a href="https://www.instagram.com/emeticaaa" target="_blank" aria-label="Emetica en instagram" rel="noopener noreferrer">
           <i class="social-icons fa-brands fa-instagram"></i>
         </a>
-        <a href="https://www.soundcloud.com/emetica" target="_blank">
+        <a href="https://www.soundcloud.com/emetica" target="_blank" aria-label="Emetica en soundcloud" rel="noopener noreferrer">
           <i class="social-icons fa-brands fa-soundcloud"></i>
         </a>
-        <a href="https://www.spotify.com/emetica" target="_blank">
+        <a href="https://www.spotify.com/emetica" target="_blank" aria-label="Emetica en spotify" rel="noopener noreferrer">
           <i class="social-icons fa-brands fa-spotify"></i>
         </a>
       </div>
-      <p>Copyright &copy; 2024 Emetica</p>
+      <p>Copyright &copy; Emetica 2024</p>
     </footer>
 
     <script src="./js/main.js"></script>
@@ -154,5 +159,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-
 </html>

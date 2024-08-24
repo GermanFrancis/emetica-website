@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Ayuda con la busqueda de la página en google -->
     <meta
       name="description"
       content="Página web de la banda Emetica, conoce sus lanzamientos y próximos conciertos"
     />
     <meta name="keywords" content="Emetica, rock, nintendocore" />
     <meta name="author" content="refranz6" />
-    <!-- Los robots nos ayudan a ubicar el index de la pagina en internet -->
     <meta name="robots" content="index, follow" />
-    <!-- Tamaño de la pantalla -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emetica Website</title>
     <link rel="stylesheet" href="./css/reset.css" />
@@ -26,134 +23,30 @@
       </a>
       <nav>
         <a href="index.html">Inicio</a>
-        <a href="concerts.html">Conciertos</a>
-        <a href="contactus.html">Contáctanos</a>
+        <a href="concerts.html" target="content-frame">Conciertos</a>
+        <a href="contactus.html" target="content-frame">Contáctanos</a>
       </nav>
     </header>
 
     <main>
-      <section class="band-section">
-        <div class="image-overlay">
-          <img src="./img/emetica.jpg" alt="Integrantes de Emetica" />
-          <div class="gradient"></div>
-        </div>
-
-        <div class="container-actions">
-          <h2>Emetica</h2>
-          <div class="buttons">
-            <a class="play-button" href="#releases">Escúchanos</a>
-            <a
-              class="follow-button"
-              href="https://www.instagram.com/emeticaaa"
-              target="_blank"
-              >Síguenos
-              <i class="social-icons fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="old-section">
-        <h2>Canciones Bandera</h2>
-        <div id="old">
-          <article>
-            <div class="image-container">
-              <figure>
-                <img
-                  src="./img/portada2.jpeg"
-                  alt="Portada Driving Through The Meteor Gorge"
-                />
-              </figure>
-
-              <h3>Driving Through The Meteor Gorge</h3>
-              <button id="play-pause-button2">
-                <i id="play-pause-icon2" class="fa-solid fa-play"></i>
-              </button>
-            </div>
-          </article>
-          <article>
-            <div class="image-container">
-              <figure>
-                <img
-                  src="./img/portada5.jpeg"
-                  alt="Portada Metafora Arkanoide"
-                />
-              </figure>
-
-              <h3>Metafora Arkanoide</h3>
-              <button id="play-pause-button2">
-                <i id="play-pause-icon2" class="fa-solid fa-play"></i>
-              </button>
-            </div>
-          </article>
-          <article>
-            <div class="image-container">
-              <figure>
-                <img
-                  src="./img/portada3.jpeg"
-                  alt="Portada Follow Us To The Deepest Forest"
-                />
-              </figure>
-              <h3>Follow Us To The Deepest Forest</h3>
-              <button id="play-pause-button3">
-                <i id="play-pause-icon3" class="fa-solid fa-play"></i>
-              </button>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="releases-section">
-        <h2>Nuevos Lanzamientos</h2>
-        <div id="releases">
-          <article>
-            <div class="image-container">
-              <figure>
-                <img src="./img/portada1.jpeg" alt="Portada cuerda huida" />
-              </figure>
-              <h3>Cuerda Huida</h3>
-              <button id="play-pause-button1">
-                <i id="play-pause-icon1" class="fa-solid fa-play"></i>
-              </button>
-            </div>
-          </article>
-          <article>
-            <div class="image-container">
-              <figure>
-                <img
-                  src="./img/portada4.jpeg"
-                  alt="Portada MortalKombatWoundedVeteran"
-                />
-              </figure>
-              <h3>MortalKombatWoundedVeteran</h3>
-              <button id="play-pause-button4">
-                <i id="play-pause-icon4" class="fa-solid fa-play"></i>
-              </button>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="info">
-        <h3>Nueva música próximamente...</h3>
-      </section>
+      <iframe id="content-frame" name="content-frame" src="inicio.html" frameborder="0" ></iframe>
     </main>
 
     <footer>
       <div class="social-icons">
-        <a href="https://www.instagram.com/emeticaaa" target="_blank" aria-label="Emetica en instagram" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/emeticaaa" target="_blank" aria-label="Emetica en instagram" rel="noreferrer">
           <i class="social-icons fa-brands fa-instagram"></i>
         </a>
-        <a href="https://www.soundcloud.com/emetica" target="_blank" aria-label="Emetica en soundcloud" rel="noopener noreferrer">
+        <a href="https://www.soundcloud.com/emetica" target="_blank" aria-label="Emetica en soundcloud" rel="noreferrer">
           <i class="social-icons fa-brands fa-soundcloud"></i>
         </a>
-        <a href="https://www.spotify.com/emetica" target="_blank" aria-label="Emetica en spotify" rel="noopener noreferrer">
+        <a href="https://www.spotify.com/emetica" target="_blank" aria-label="Emetica en spotify" rel="noreferrer">
           <i class="social-icons fa-brands fa-spotify"></i>
         </a>
       </div>
       <p>Copyright &copy; Emetica 2024</p>
     </footer>
 
-    <script src="./js/main.js"></script>
     <script
       src="https://kit.fontawesome.com/c5c7e665ff.js"
       crossorigin="anonymous"

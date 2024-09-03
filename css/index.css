@@ -30,6 +30,41 @@ body {
     font-family: "Work Sans", sans-serif;
     font-size: 1.6rem;
     background-color: var(--color-secundario);
+    --scrollbar-border-thickness: 0px;
+    --scrollbar-width: 5px;
+    --scrollbar-height: 5px;
+    --scrollbar-thumb-color: #141414;
+    --scrollbar-border-radius: 5px;
+    --scrollbar-track-color: #32323275;
+    --scrollbar-button-color: #141414;
+    --scrollbar-corner-color: #32323275;
+    --scrollbar-border-color: #32323275;
+}
+
+/* Scrollbar CSS */
+body::-webkit-scrollbar {
+    width: var(--scrollbar-width, 20px);
+    height: var(--scrollbar-height, 20px);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color, #3B82F6);
+    border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255));
+    border-radius: var(--scrollbar-border-radius, 4px);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbar-track-color, #A1A1AA);
+}
+
+body::-webkit-scrollbar-corner {
+    background: var(--scrollbar-corner-color, #FFFFFF);
+    border: var(--scrollbar-border-thickness, 3px) solid var(--scrollbar-border-color, rgb(255, 255, 255));
+    border-radius: var(--scrollbar-border-radius, 4px);
+}
+
+body::-webkit-scrollbar-button:vertical:start:increment, #preview::-webkit-scrollbar-button:vertical:end:decrement, #preview::-webkit-scrollbar-button:horizontal:start:increment, #preview::-webkit-scrollbar-button:horizontal:end:decrement {
+    display: var(--show-double-buttons, none);
 }
 
 /* Header */
